@@ -11,7 +11,7 @@ There are currently 3 types of commands : LOAN, PAYMENT, BALANCE
  `Commands.java` is and Enum that stores all the command ids and size of command
 
 `BaseLedgerCommand` is the abstract class containing abstract method `execute()` which is how the commands are executed.
-All commands have a `ia-a` property and inherit this base class.
+All commands have a `is-a` property and inherit this base class.
 
 `CommandProcessor` acts as a command orchestrator and executes those command
 
@@ -39,3 +39,6 @@ Classes using Builder Pattern are:
  ### How to execute the unit tests
 
  `mvn clean test` will execute the unit test cases.
+
+### How to run the code
+`Main.java` run overall functionality by reading commands defined in `sample_input/input1.txt` file
